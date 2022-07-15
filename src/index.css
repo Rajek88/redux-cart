@@ -144,6 +144,7 @@ code {
 .cardview-description-title h3 {
   width: 80%;
   margin: 10px 0;
+  text-transform: capitalize;
 }
 .cardview-description-title span {
   width: 20%;
@@ -180,5 +181,140 @@ code {
   background-color: #1d7cbf;
   /* border: 1px solid #1d7cbf; */
   color: aliceblue;
+}
+
+.cardview-controller button:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.cardview-controller button:last-child {
+  border-radius: 0 10px 10px 0;
+}
+/* ------------------------------------------------------------------------------------- */
+
+/* ----------------------------- Cart -------------------------------------------------- */
+.cart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cart-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cart-container-sections {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cart-left,
+.cart-table,
+.cart-table-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cart-left {
+  border: 1px solid #dcdcdc;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.cart-table-head,
+.cart-table-data {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-table-data {
+  margin: 10px 0;
+}
+.cart-table-head {
+  margin: 20px 0;
+}
+.cart-table-head div {
+  width: 32%;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #717171;
+  text-transform: uppercase;
+}
+.cart-table-data div {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+}
+.cart-h2 {
+  color: #4e5666;
+  align-self: flex-start;
+}
+.cart-controller {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 5;
+}
+.cart-controller .cardview-controller {
+  margin-top: 0;
+  width: 60%;
+}
+.cart-controller button {
+  background-color: #4e5666;
+}
+.cart-controller input {
+  border-color: #4e5666;
+}
+
+.cart-right {
+  width: 100%;
+  background-color: #edf2f5;
+  padding: 30px;
+  border-radius: 10px;
+}
+/* -------------------------------------------------------------------------------- */
+.back-btn {
+  margin-top: 30px;
+  color: #4e5666;
+  align-self: flex-start;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+}
+.addmore-btn {
+  margin-top: 20px;
+  align-self: flex-start;
+  color: #1d7cbf;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: transparent;
+}
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 20px;
 }
 /* ------------------------------------------------------------------------------------- */

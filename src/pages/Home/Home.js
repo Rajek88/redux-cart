@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Most Popular</h1>
-      <h1>------------------------- * -------------------------</h1>
+      <h1>------ * ------</h1>
       <div className="cardview-container">
         {myState.products.map((i) => (
           <CardView key={i.id} data={i} />
