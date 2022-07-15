@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* ********************************** Navbar **************************************************** */
 .navbar {
   width: 100%;
@@ -27,6 +31,7 @@ code {
   justify-content: space-evenly;
   align-items: center;
   width: 50px;
+  cursor: pointer;
 }
 
 .navbar-lhs img {
@@ -40,6 +45,7 @@ code {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  cursor: pointer;
 }
 
 .cart-icon-div {
@@ -291,6 +297,11 @@ code {
   padding: 30px;
   border-radius: 10px;
 }
+
+.cart-left,
+.cart-right {
+  margin: 5px 10px;
+}
 /* -------------------------------------------------------------------------------- */
 .back-btn {
   margin-top: 30px;
@@ -316,5 +327,16 @@ hr {
   background-color: #dcdcdc;
   border: none;
   border-radius: 20px;
+}
+
+.paynow-btn {
+  padding: 10px 20px;
+  background-color: #1d7cbf;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  margin: 20px 0;
 }
 /* ------------------------------------------------------------------------------------- */
