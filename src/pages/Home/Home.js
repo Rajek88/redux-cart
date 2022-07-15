@@ -1,6 +1,7 @@
 // import React, { useEffect, useState } from "react";
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import CardView from "../../components/CardView";
 // import { fetchDataFromAPI } from "../../api/FetchDataFromAPI";
 
@@ -9,19 +10,21 @@ const Home = () => {
   // -------------------------- To Make things Dyanamic -------------------
   // const [cartItems, setCartItems] = useState([]);
 
-  // useEffect(() => {
-  //   const fetcher = async () => {
-  //     const cartItemsData = await fetchDataFromAPI(
-  //       "https://react-coding-assignment.s3.ap-south-1.amazonaws.com/cards/items.json",
-  //       "GET"
-  //     );
-  //     console.log("cartItemsData", cartItemsData);
-  //     if (cartItemsData) {
-  //       setCartItems(cartItemsData.data);
-  //     }
-  //   };
-  //   fetcher();
-  // }, []);
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate("/Home");
+    // const fetcher = async () => {
+    //   const cartItemsData = await fetchDataFromAPI(
+    //     "https://react-coding-assignment.s3.ap-south-1.amazonaws.com/cards/items.json",
+    //     "GET"
+    //   );
+    //   console.log("cartItemsData", cartItemsData);
+    //   if (cartItemsData) {
+    //     setCartItems(cartItemsData.data);
+    //   }
+    // };
+    // fetcher();
+  }, []);
   // ----------------------------------------------------------------------
 
   return (

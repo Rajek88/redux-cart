@@ -25,7 +25,7 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="cart-container">
-        <button className="back-btn" onClick={() => navigate("/")}>
+        <button className="back-btn" onClick={() => navigate("/Home")}>
           &lt; Back to Home
         </button>
         <h2 className="cart-h2">Order Summary ( {qty} items )</h2>
@@ -55,7 +55,10 @@ const Cart = () => {
                     )}
                 </div>
                 <hr />
-                <button className="addmore-btn" onClick={() => navigate("")}>
+                <button
+                  className="addmore-btn"
+                  onClick={() => navigate("/Home")}
+                >
                   + Add more items
                 </button>
               </div>
@@ -107,7 +110,10 @@ const Cart = () => {
                 </div>
                 <hr />
 
-                <button className="paynow-btn" onClick={() => navigate("")}>
+                <button
+                  className="paynow-btn"
+                  onClick={() => navigate("/Home")}
+                >
                   Place Order
                 </button>
               </div>

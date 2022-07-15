@@ -13,11 +13,11 @@ const Navbar = ({ navigate }) => {
 
   return (
     <div className="navbar">
-      <div className="navbar-lhs" onClick={() => navigate("")}>
+      <div className="navbar-lhs" onClick={() => navigate("/Home")}>
         <img alt="logo" src={HappayLogo} />
       </div>
       <div className="navbar-rhs">
-        <div className="cart-icon-div" onClick={() => navigate("/Cart")}>
+        <div className="cart-icon-div" onClick={() => navigate("Cart")}>
           <img className="cart-icon" alt="cart" src={CartIcon} />
           <span className="cart-num">{qty}</span>
         </div>
