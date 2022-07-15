@@ -25,7 +25,10 @@ const Cart = () => {
   return (
     <div className="cart">
       <div className="cart-container">
-        <button className="back-btn" onClick={() => navigate("/Home")}>
+        <button
+          className="back-btn"
+          onClick={() => navigate("/redux-cart/Home")}
+        >
           &lt; Back to Home
         </button>
         <h2 className="cart-h2">Order Summary ( {qty} items )</h2>
@@ -57,7 +60,7 @@ const Cart = () => {
                 <hr />
                 <button
                   className="addmore-btn"
-                  onClick={() => navigate("/Home")}
+                  onClick={() => navigate("/redux-cart/Home")}
                 >
                   + Add more items
                 </button>
@@ -112,7 +115,7 @@ const Cart = () => {
 
                 <button
                   className="paynow-btn"
-                  onClick={() => navigate("/Home")}
+                  onClick={() => navigate("/redux-cart/Home")}
                 >
                   Place Order
                 </button>

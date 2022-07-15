@@ -13,11 +13,14 @@ const Navbar = ({ navigate }) => {
 
   return (
     <div className="navbar">
-      <div className="navbar-lhs" onClick={() => navigate("/Home")}>
+      <div className="navbar-lhs" onClick={() => navigate("/redux-cart/Home")}>
         <img alt="logo" src={HappayLogo} />
       </div>
       <div className="navbar-rhs">
-        <div className="cart-icon-div" onClick={() => navigate("Cart")}>
+        <div
+          className="cart-icon-div"
+          onClick={() => navigate("/redux-cart/Cart")}
+        >
           <img className="cart-icon" alt="cart" src={CartIcon} />
           <span className="cart-num">{qty}</span>
         </div>

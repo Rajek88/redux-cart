@@ -12,7 +12,7 @@ const Home = () => {
 
   const navigate = useNavigate();
   useEffect(() => {
-    navigate("/Home");
+    navigate("/redux-cart/Home");
     // const fetcher = async () => {
     //   const cartItemsData = await fetchDataFromAPI(
     //     "https://react-coding-assignment.s3.ap-south-1.amazonaws.com/cards/items.json",
