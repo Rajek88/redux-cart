@@ -1,13 +1,182 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* ********************************** Navbar **************************************************** */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-lhs {
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50px;
+}
+
+.navbar-lhs img {
+  /* width: 50px; */
+  height: 50px;
+}
+
+.navbar-rhs {
+  padding: 10px 10px;
+  width: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cart-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon-div span {
+  width: 18px;
+  height: 18px;
+  border-radius: 25px;
+  background-color: maroon;
+  color: aliceblue;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  right: 1px;
+}
+
+.navbar-rhs img {
+  width: 40px;
+  height: 40px;
+}
+/* *********************************************************************************************** */
+
+/* ------------------------------- Body ------------------------------------------------- */
+
+/* ------------------------------- Home ------------------------------------------------ */
+
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cardview-container {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cardview {
+  margin: 10px 0px;
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* border-radius: 10px;
+  box-shadow: 5px 10px 8px #888888; */
+}
+
+.cardview-card-image-container,
+.cardview-card-image {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.cardview-card-image-discount {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px 0 0 30px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+.cardview-description {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cardview-description-title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cardview-description-title h3 {
+  width: 80%;
+  margin: 10px 0;
+}
+.cardview-description-title span {
+  width: 20%;
+  font-weight: 700;
+  text-align: center;
+}
+.cardview-description p {
+  margin: 0%;
+}
+
+.cardview-controller {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-radius: 10px; */
+}
+.cardview-controller input {
+  width: 60%;
+  margin: 0%;
+  padding: 0;
+  height: 32px;
+  text-align: center;
+  border: 2px solid #1d7cbf;
+  /* border: none; */
+}
+.cardview-controller button {
+  margin: 0%;
+  padding: 0%;
+  height: 36px;
+  width: 20%;
+  border: none;
+  background-color: #1d7cbf;
+  /* border: 1px solid #1d7cbf; */
+  color: aliceblue;
+}
+/* ------------------------------------------------------------------------------------- */
