@@ -1,6 +1,12 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { decItem, incItem } from "../redux/actions";
 
 const CardView = ({ data }) => {
+  const myState = useSelector((state) => state.quantityHandler);
+  const dispatch = useDispatch();
+  const currentItem = myState.cart.find((item) => item.id === data.id);
+  //   console.log("currentItem QTY", currentItem ? currentItem.qty : 0);
   return (
     <div className="cardview">
       <div className="cardview-card-image-container">
@@ -32,9 +38,14 @@ const CardView = ({ data }) => {
         <p>{data.description}</p>
       </div>
       <div className="cardview-controller">
-        <button>+</button>
-        <input type="text" readOnly defaultValue={0} />
-        <button>-</button>
+        <button onClick={() => dispatch(decItem(data))}>-</button>
+        <input
+          type="text"
+          contentEditable={false}
+          value={currentItem ? currentItem.qty : 0}
+          readOnly
+        />
+        <button onClick={() => dispatch(incItem(data))}>+</button>
       </div>
     </div>
   );
