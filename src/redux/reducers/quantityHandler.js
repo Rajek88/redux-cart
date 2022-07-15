@@ -1,5 +1,14 @@
-const initialState = localStorage.getItem("state")
-  ? JSON.parse(localStorage.getItem("state"))
+let localState;
+try {
+  localState = localStorage.getItem("state");
+  localState = JSON.parse(localState);
+  console.log("localState exists : ", localState);
+} catch (error) {
+  localState = false;
+}
+
+const initialState = localState
+  ? localState
   : {
       products: [
         {
@@ -38,7 +47,6 @@ const initialState = localStorage.getItem("state")
         },
       ],
       cart: [],
-      qty: 0,
     };
 
 const quantityHandler = (state = initialState, action) => {
