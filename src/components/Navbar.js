@@ -13,7 +13,7 @@ const Navbar = ({ navigate }) => {
 
   return (
     <div className="navbar">
-      <div className="navbar-lhs" onClick={() => navigate("/")}>
+      <div className="navbar-lhs" onClick={() => navigate("")}>
         <img alt="logo" src={HappayLogo} />
       </div>
       <div className="navbar-rhs">

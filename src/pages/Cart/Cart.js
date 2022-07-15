@@ -55,7 +55,7 @@ const Cart = () => {
                     )}
                 </div>
                 <hr />
-                <button className="addmore-btn" onClick={() => navigate("/")}>
+                <button className="addmore-btn" onClick={() => navigate("")}>
                   + Add more items
                 </button>
               </div>
@@ -107,7 +107,7 @@ const Cart = () => {
                 </div>
                 <hr />
 
-                <button className="paynow-btn" onClick={() => navigate("/")}>
+                <button className="paynow-btn" onClick={() => navigate("")}>
                   Place Order
                 </button>
               </div>
