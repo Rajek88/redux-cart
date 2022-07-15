@@ -218,6 +218,7 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .cart-left,
 .cart-table,
@@ -292,7 +293,6 @@ button {
 }
 
 .cart-right {
-  width: 100%;
   background-color: #edf2f5;
   padding: 30px;
   border-radius: 10px;
@@ -301,6 +301,8 @@ button {
 .cart-left,
 .cart-right {
   margin: 5px 10px;
+  width: 300px;
+  flex-grow: 1;
 }
 /* -------------------------------------------------------------------------------- */
 .back-btn {
