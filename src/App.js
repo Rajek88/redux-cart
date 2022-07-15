@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Navbar navigate={navigate} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Cart" element={<Cart />} />
+        <Route path="/redux-cart/" element={<Home />} />
+        <Route path="/redux-cart/Home" element={<Home />} />
+        <Route path="/redux-cart/Cart" element={<Cart />} />
       </Routes>
     </div>
   );
