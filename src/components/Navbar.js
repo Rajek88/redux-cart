@@ -6,6 +6,9 @@ import UserIcon from "../assets/icons/user.png";
 
 const Navbar = ({ navigate }) => {
   const myState = useSelector((state) => state.quantityHandler);
+  const qty = myState.cart.reduce((prev, next) => {
+    return prev + next.qty;
+  }, 0);
   return (
     <div className="navbar">
       <div className="navbar-lhs" onClick={() => navigate("/")}>
@@ -14,7 +17,7 @@ const Navbar = ({ navigate }) => {
       <div className="navbar-rhs">
         <div className="cart-icon-div" onClick={() => navigate("/Cart")}>
           <img className="cart-icon" alt="cart" src={CartIcon} />
-          <span className="cart-num">{myState.qty}</span>
+          <span className="cart-num">{qty}</span>
         </div>
         <img alt="profile" src={UserIcon} className="user-icon" />
       </div>

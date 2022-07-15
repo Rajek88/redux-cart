@@ -58,7 +58,6 @@ const quantityHandler = (state = initialState, action) => {
                 : item
             )
           : [...state.cart, { ...item, qty: 1 }],
-        qty: state.qty + 1,
       };
 
     case "DECREMENT_ITEM":
@@ -80,7 +79,6 @@ const quantityHandler = (state = initialState, action) => {
                 : item
             )
           : [...state.cart, { ...itemToRemove, qty: 0 }],
-        qty: state.qty > 0 ? state.qty - 1 : 0,
       };
 
     default:
