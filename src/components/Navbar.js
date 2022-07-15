@@ -6,9 +6,11 @@ import UserIcon from "../assets/icons/user.png";
 
 const Navbar = ({ navigate }) => {
   const myState = useSelector((state) => state.quantityHandler);
+  // calcualte total cart quantity
   const qty = myState.cart.reduce((prev, next) => {
     return prev + next.qty;
   }, 0);
+
   return (
     <div className="navbar">
       <div className="navbar-lhs" onClick={() => navigate("/")}>

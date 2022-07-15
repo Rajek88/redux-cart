@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 code {
@@ -97,9 +98,10 @@ code {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  /* background-color: white; */
   /* border: 1px solid red; */
-  /* border-radius: 10px;
-  box-shadow: 5px 10px 8px #888888; */
+  /* border-radius: 10px; */
+  /* box-shadow: 5px 10px 8px #888888; */
 }
 
 .cardview-card-image-container,
